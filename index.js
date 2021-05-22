@@ -19,8 +19,7 @@ client.connect(err => {
   const collection = client.db("FilmSpace").collection("products");
   const cart = client.db("FilmSpace").collection("cart");
   app.get('/', (req, res) => {
-    res.send('Hello World!')
-    console.log(uri);
+    res.send('Hello World!') 
   })
 
   app.post('/addProduct', (req, res) => {
